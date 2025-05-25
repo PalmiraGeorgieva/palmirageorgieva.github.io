@@ -167,10 +167,6 @@ nav {
   flex-direction: column;
   text-align: center;
 }
-.project-title {
-  width: 100%;
-  margin: 10px 0;
-}
 .social-icons a {
   font-size: 1.2rem;
 }
