@@ -1,0 +1,132 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #4facfe, #00f2fe );
+    color: #fff;
+}
+
+header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+#navbar a:hover {
+  color: #ff6f61;
+}
+#projects, #certificates, #contacts{
+    color: #033b77;
+}
+.project-title {
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 5px;
+  text-align: center;
+  color: #0f0f0f;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px #ccc;
+}
+.project-title:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.project-title h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.project-title p 
+{
+  font-size: 1rem;
+  color: #ff6f61;
+  margin-bottom: 15px;
+}
+.project-title ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.project-title li {
+  margin: 0 15px;
+}
+.project-title a {
+  color: whitesmoke;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #007bff;
+  font-weight: bold;
+}
+.project-title a:hover {
+  background-color: #0056b3;
+}
+#contacts {
+  padding: 40px;
+   background: linear-gradient(to bottom, #4facfe, #00f2fe );
+  text-align: center;   
+}
+#contacts h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(9, 9, 104, 0.733);
+    margin-top: 2rem;
+}
+.social-icons {
+  margin-top: 20px;
+  text-align: center;
+}
+.social-icons a {
+  margin: 0 10px;
+  font-size: 2rem;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.social-icons a:hover {
+  color: rgba(6, 6, 139, 0.733);
+}
+@media (max-width: 600px) {
+body {
+font-size: 14px;
+}
+nav {
+  flex-direction: column;
+  text-align: center;
+}
+.project-title {
+  width: 100%;
+  margin: 10px 0;
+}
+.social-icons a {
+  font-size: 1.2rem;
+}
+}
