@@ -133,6 +133,32 @@ footer {
 .social-icons a:hover {
   color: rgba(6, 6, 139, 0.733);
 }
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .project-card {
+    font-size: 14px;
+  }
+
+  .navbar, .footer, .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  /* При нужда скрий или адаптирай изображения */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 @media (max-width: 600px) {
 body {
 font-size: 14px;
@@ -148,4 +174,10 @@ nav {
 .social-icons a {
   font-size: 1.2rem;
 }
+  @media (max-width: 480px) {
+  .project-card {
+    font-size: 12px;
+    padding: 10px;
+  }
+  }
 }
