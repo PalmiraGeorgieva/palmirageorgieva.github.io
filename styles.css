@@ -62,7 +62,7 @@ nav a {
   color: #ff6f61;
   margin-bottom: 15px;
 }
-.projects-container {
+.project-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* или space-between */
@@ -134,7 +134,7 @@ footer {
   color: rgba(6, 6, 139, 0.733);
 }
 @media (max-width: 768px) {
-  .projects-container {
+  .project-container {
     grid-template-columns: 1fr;
     padding: 10px;
   }
