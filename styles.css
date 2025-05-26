@@ -62,7 +62,7 @@ nav a {
   color: #ff6f61;
   margin-bottom: 15px;
 }
-.project-container {
+.projects-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* или space-between */
