@@ -93,6 +93,10 @@ nav a {
 .project-title a:hover {
   background-color: #0056b3;
 }
+.certificate {
+  margin-bottom: 20px;
+  text-align: center;
+}
 #contacts {
   padding: 40px;
    background: linear-gradient(to bottom, #4facfe, #00f2fe );
