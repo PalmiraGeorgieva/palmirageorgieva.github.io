@@ -5,12 +5,14 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #4facfe, #00f2fe );
+    background-image: url(portfolioWall.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
 }
 
 header {
-    background-color: #4a90e2;
+    
     color: white;
     padding: 2rem;
     text-align: center;
@@ -31,8 +33,11 @@ nav a {
 #navbar a:hover {
   color: #ff6f61;
 }
-#projects, #certificates, #contacts{
+#projects, #certificates{
     color: #033b77;
+}
+#contacts {
+  color: white;
 }
 .project-title {
   background-color: white;
@@ -125,7 +130,6 @@ nav a {
 }
 #contacts {
   padding: 40px;
-   background: linear-gradient(to bottom, #4facfe, #00f2fe );
   text-align: center;   
 }
 #contacts h2 {
@@ -146,7 +150,7 @@ footer {
 .social-icons a {
   margin: 0 10px;
   font-size: 2rem;
-  color: #333;
+  color: #f1e3e3;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -206,4 +210,5 @@ nav {
   }
   }
 }
+
 
