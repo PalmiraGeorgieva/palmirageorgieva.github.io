@@ -93,9 +93,35 @@ nav a {
 .project-title a:hover {
   background-color: #0056b3;
 }
-.certificate {
-  margin-bottom: 20px;
-  text-align: center;
+.certificate-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 24px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.certificate-card img {
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.certificate-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.certificate-info p {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0;
 }
 #contacts {
   padding: 40px;
@@ -164,6 +190,15 @@ nav {
 .social-icons a {
   font-size: 1.2rem;
 }
+  .certificate-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .certificate-card img {
+    width: 100%;
+    max-width: 100%;
+  }
   @media (max-width: 480px) {
   .project-card {
     font-size: 12px;
@@ -171,3 +206,4 @@ nav {
   }
   }
 }
+
