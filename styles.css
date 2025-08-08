@@ -16,6 +16,9 @@ header {
     color: white;
     padding: 2rem;
     text-align: center;
+    background-image: url(portfolioWall.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 nav {
   display: flex;
@@ -210,5 +213,6 @@ nav {
   }
   }
 }
+
 
 
