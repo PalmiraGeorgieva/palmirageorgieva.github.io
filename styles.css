@@ -81,13 +81,16 @@ nav a {
   padding: 20px;
 }
 .project-card {
-  flex: 1 1 300px; 
-  max-width: 400px;
-  box-sizing: border-box;
+ display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 24px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 .project-card img {
    max-width: 250px;
@@ -228,6 +231,7 @@ nav {
   }
   }
 }
+
 
 
 
