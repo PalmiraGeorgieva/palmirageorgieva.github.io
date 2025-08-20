@@ -89,6 +89,12 @@ nav a {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+.project-card img {
+   max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+  }
 .project-title a {
   color: white;
   text-decoration: none;
@@ -213,6 +219,7 @@ nav {
   }
   }
 }
+
 
 
 
