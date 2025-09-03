@@ -81,9 +81,7 @@ nav a {
   padding: 20px;
 }
 .project-card {
- display: flex;
-  align-items: center;
-  justify-content: space-between;
+ position: relative;
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -91,13 +89,42 @@ nav a {
   margin-bottom: 24px;
   gap: 20px;
   flex-wrap: wrap;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.project-card::after {
+  content: "👉 Виж проекта";
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover::after {
+  opacity: 1;
+}
+
 .project-card img {
    max-width: 250px;
   height: auto;
   border-radius: 8px;
-  object-fit: contain;
+  object-fit: cover;
+  transition: transform 0.5s ease;
   }
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+
 .project-title a {
   color: white;
   text-decoration: none;
@@ -160,14 +187,30 @@ footer {
   text-align: center;
 }
 .social-icons a {
+  display: inline-block;
   margin: 0 10px;
-  font-size: 2rem;
-  color: #f1e3e3;
+  padding: 10px 15px;
+  border-radius: 8px;
   text-decoration: none;
-  transition: color 0.3s ease;
+  color: #fff;
+  transition: background 0.3s, transform 0.2s;
 }
 .social-icons a:hover {
-  color: rgba(6, 6, 139, 0.733);
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+.social-icons a:nth-child(1) { background: #0077b5; } /* LinkedIn */
+.social-icons a:nth-child(2) { background: #333; }   /* GitHub */
+.social-icons a:nth-child(3) { background: #d44638; } /* Gmail */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 @media (max-width: 768px) {
   .project-container {
@@ -231,6 +274,7 @@ nav {
   }
   }
 }
+
 
 
 
