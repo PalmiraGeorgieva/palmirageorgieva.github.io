@@ -53,6 +53,20 @@ nav a {
 #contacts {
   color: white;
 }
+.skills {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.skills i {
+    font-size: 2.5rem;
+}
+
+.technologies {
+    margin-bottom: 2rem;
+}
 .project-title {
   background-color: white;
   border-radius: 8px;
