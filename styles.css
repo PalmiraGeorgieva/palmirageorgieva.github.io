@@ -58,13 +58,15 @@ nav a {
     display: grid;
     gap: 1rem;
 }
+#skills h2, span{
+  color: #033b77;
+}
 #skills {
   display: flex;
   align-item: center;
   flex-wrap: wrap;
   background-color: white;
   border-radius: 8px;
-  color: #033b77;
   margin: 20px;
   padding: 20px;
 }
