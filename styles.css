@@ -64,6 +64,9 @@ nav a {
   flex-wrap: wrap;
   background-color: white;
   border-radius: 8px;
+  color: #033b77;
+  margin: 20px;
+  padding: 20px;
 }
 #skills .skills {
     display: flex;
