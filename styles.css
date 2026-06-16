@@ -53,18 +53,25 @@ nav a {
 #contacts {
   color: white;
 }
-.technologies {
+
+#skills .technologies {
     display: grid;
     gap: 1rem;
 }
-
-.skills {
+#skills {
+  display: flex;
+  align-item: center;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 8px;
+}
+#skills .skills {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
-.skills i {
+#skills .skills i {
     font-size: 2rem;
 }
 
