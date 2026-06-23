@@ -54,31 +54,50 @@ nav a {
   color: white;
 }
 
-#skills .technologies {
-    display: grid;
-    gap: 1rem;
-}
-#skills h2, span{
-  color: #033b77;
-}
 #skills {
-  display: flex;
-  align-item: center;
-  flex-wrap: wrap;
-  background-color: white;
-  border-radius: 8px;
-  margin: 20px;
-  padding: 20px;
-}
-#skills .skills {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  padding: 80px 10%;
+  text-align: center;
 }
 
-#skills .skills i {
-    font-size: 2rem;
+#skills h2 {
+  margin-bottom: 40px;
+  font-size: 2rem;
 }
+
+.technologies-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.technologies {
+  padding: 25px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.technologies h3 {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  font-size: 1rem;
+}
+
+.skills i {
+  font-size: 28px;
+}
+
+.skills span {
+  font-weight: 500;
+}
+
 
 .project-title {
   background-color: white;
@@ -313,6 +332,23 @@ nav {
   }
 }
 
+/* Tablet */
+@media (max-width: 900px) {
+  .technologies-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Phone */
+@media (max-width: 600px) {
+  .technologies-container {
+    grid-template-columns: 1fr;
+  }
+
+  #skills {
+    padding: 60px 6%;
+  }
+}
 
 
 
