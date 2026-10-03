@@ -123,14 +123,14 @@ nav a {
 }
 
 .technologies {
+  width: auto;
   padding: 25px;
   border-radius: 16px;
   background: #ffffff;
   border: 1px solid #d1fae5;
   box-shadow: 0 8px 25px rgba(6, 78, 59, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
 }
-
 .technologies:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 30px rgba(6, 78, 59, 0.18);
