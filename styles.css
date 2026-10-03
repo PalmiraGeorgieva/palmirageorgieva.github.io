@@ -266,17 +266,36 @@ nav a {
   opacity: 1;
 }
 
+#certificates {
+  padding: 80px 10%;
+  color: #064e3b;
+  background: #ecfdf5;
+}
+
+#certificates h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
 .certificate-card {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background: #ffffff;
+  border: 1px solid #d1fae5;
+  border-radius: 14px;
+  box-shadow: 0 5px 15px rgba(6, 78, 59, 0.08);
   padding: 20px;
   margin-bottom: 24px;
   gap: 20px;
   flex-wrap: wrap;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(6, 78, 59, 0.16);
 }
 
 .certificate-card img {
@@ -293,9 +312,11 @@ nav a {
 
 .certificate-info p {
   font-size: 1.1rem;
-  color: #333;
+  color: #374151;
   margin: 0;
+  line-height: 1.6;
 }
+
 #contacts {
   padding: 50px 20px;
   text-align: center;
