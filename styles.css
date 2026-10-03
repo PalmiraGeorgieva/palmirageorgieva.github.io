@@ -157,87 +157,113 @@ nav a {
   color: #374151;
 }
 
+#projects {
+  padding: 80px 20px;
+  color: #064e3b;
+}
 
 .project-title {
-  background-color: white;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #d1fae5;
+  padding: 25px;
   max-width: 1200px;
-  margin: auto;
-  border-radius: 5px;
+  margin: 1rem auto;
+  border-radius: 12px;
   text-align: center;
-  color: #0f0f0f;
+  color: #1f2937;
+  box-shadow: 0 8px 25px rgba(6, 78, 59, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-top: 1rem;
-  box-shadow: 0 0 10px #ccc;
 }
+
 .project-title:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 30px rgba(6, 78, 59, 0.16);
 }
+
 .project-title h2 {
   font-size: 1.5rem;
+  color: #064e3b;
   margin-bottom: 10px;
 }
+
 .project-title p {
   font-size: 1rem;
-  color: var(--green-primary);
+  color: #059669;
   margin-bottom: 15px;
 }
+
+.project-title a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: #059669;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.project-title a:hover {
+  background: #047857;
+  transform: translateY(-2px);
+}
+
 .project-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* или space-between */
-  gap: 20px;
+  justify-content: center;
+  gap: 25px;
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
   padding: 20px;
 }
+
 .project-card {
   position: relative;
-  background-color: #fff;
-  border: 1px solid var(--green-light);
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background: #ffffff;
+  border: 1px solid #d1fae5;
+  border-radius: 14px;
+  box-shadow: 0 5px 15px rgba(6, 78, 59, 0.08);
   padding: 20px;
   margin-bottom: 24px;
-  gap: 20px;
-  flex-wrap: wrap;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .project-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(5, 150, 105, 0.20);
+  box-shadow: 0 12px 28px rgba(6, 78, 59, 0.18);
 }
+
+.project-card img {
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.04);
+}
+
 .project-card::after {
-  content: "👉 Виж проекта";
+  content: "View Project";
   position: absolute;
   bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--green-dark);
-  color: #fff;
-  padding: 6px 12px;
-  border-radius: 6px;
+  background: #064e3b;
+  color: #ffffff;
+  padding: 7px 14px;
+  border-radius: 7px;
   opacity: 0;
   transition: opacity 0.3s ease;
+  white-space: nowrap;
 }
 
 .project-card:hover::after {
   opacity: 1;
-}
-
-.project-card img {
-   max-width: 250px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-  }
-.project-card:hover img {
-  transform: scale(1.05);
 }
 
 
