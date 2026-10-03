@@ -116,8 +116,10 @@ nav a {
 
 .technologies-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .technologies {
