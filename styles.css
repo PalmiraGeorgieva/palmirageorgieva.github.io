@@ -318,50 +318,59 @@ nav a {
 }
 
 #contacts {
-  padding: 50px 20px;
+  padding: 60px 20px;
   text-align: center;
-  color: white;
-  background: #064e3b;
+  color: #ffffff;
+  background: linear-gradient(
+    135deg,
+    #064e3b,
+    #047857
+  );
 }
 
 #contacts h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
-  text-align: center;
+  margin-bottom: 25px;
 }
 
 footer {
   text-align: center;
-  padding: 1rem;
+  padding: 1.2rem;
   background: #043c2e;
-  color: white;
+  color: #d1fae5;
   margin-top: 0;
 }
 
 .social-icons {
-  margin-top: 20px;
+  margin-top: 25px;
   text-align: center;
 }
+
 .social-icons a {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 8px;
   padding: 10px 15px;
   border-radius: 8px;
   text-decoration: none;
   color: #fff;
-  transition: background 0.3s, transform 0.2s;
+  transition: transform 0.25s ease, opacity 0.25s ease;
 }
+
 .social-icons a:hover {
-  transform: translateY(-3px);
-  opacity: 0.9;
+  transform: translateY(-4px);
+  opacity: 0.85;
 }
-.social-icons a:nth-child(1) { background: #0077b5; } /* LinkedIn */
-.social-icons a:nth-child(2) { background: #333; }   /* GitHub */
-.social-icons a:nth-child(3) { background: #d44638; } /* Gmail */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+
+.social-icons a:nth-child(1) {
+  background: #0077b5;
+}
+
+.social-icons a:nth-child(2) {
+  background: #333;
+}
+
+.social-icons a:nth-child(3) {
+  background: #d44638;
 }
 
 .fade-in.visible {
