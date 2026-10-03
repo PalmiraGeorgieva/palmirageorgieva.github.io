@@ -31,6 +31,20 @@ header {
     #059669
   );
 }
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+header h1 span {
+  color: #6ee7b7;
+}
+
+header p {
+  color: #d1fae5;
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -264,20 +278,26 @@ nav a {
   margin: 0;
 }
 #contacts {
-  padding: 40px;
-  text-align: center;   
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+  background: #064e3b;
 }
+
 #contacts h2 {
   font-size: 2rem;
   margin-bottom: 20px;
   text-align: center;
 }
+
 footer {
   text-align: center;
   padding: 1rem;
-  background: rgba(6, 78, 59, 0.92);
-  margin-top: 2rem;
+  background: #043c2e;
+  color: white;
+  margin-top: 0;
 }
+
 .social-icons {
   margin-top: 20px;
   text-align: center;
@@ -308,6 +328,30 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+
+#skills h2,
+#projects h2,
+#certificates h2,
+#contacts h2 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+#skills h2::after,
+#projects h2::after,
+#certificates h2::after,
+#contacts h2::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  bottom: 0;
+  left: 25%;
+  background: #10b981;
+  border-radius: 3px;
+}
+
 @media (max-width: 768px) {
   .project-container {
     grid-template-columns: 1fr;
