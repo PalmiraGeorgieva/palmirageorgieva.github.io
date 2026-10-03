@@ -41,10 +41,6 @@ header h1 span {
   color: #6ee7b7;
 }
 
-header p {
-  color: #d1fae5;
-}
-
 nav {
   display: flex;
   justify-content: center;
