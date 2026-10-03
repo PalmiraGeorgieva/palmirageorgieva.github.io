@@ -248,7 +248,7 @@ nav a {
 }
 
 .project-card::after {
-  content: "View Project";
+  content: "View Project →";
   position: absolute;
   bottom: 15px;
   left: 50%;
@@ -266,21 +266,6 @@ nav a {
   opacity: 1;
 }
 
-
-.project-title a {
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 5px;
-  background-color: var(--green-primary);
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-.project-title a:hover {
-  background-color: var(--green-hover);
-  transform: translateY(-2px);
-}
 .certificate-card {
   display: flex;
   align-items: center;
