@@ -268,6 +268,72 @@ nav a {
   opacity: 1;
 }
 
+
+/* TTM Project Card */
+
+.ttm-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    width: 100%;
+    max-width: 650px;
+    padding: 25px;
+    margin: 0 auto;
+
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.ttm-card > a:first-child {
+    text-decoration: none;
+    color: #006b4f;
+}
+
+.ttm-card strong {
+    display: block;
+    font-size: 1.2rem;
+}
+
+.ttm-card img {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.ttm-card small {
+    display: block;
+    line-height: 1.6;
+    font-size: 0.85rem;
+}
+
+.ttm-card .project-status {
+    margin: 5px 0;
+}
+
+.ttm-card .project-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .ttm-card {
+        padding: 15px;
+    }
+
+    .ttm-card img {
+        max-width: 100%;
+    }
+}
+
+
 #certificates {
   padding: 80px 10%;
   color: #064e3b;
