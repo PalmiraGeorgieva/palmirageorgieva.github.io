@@ -214,6 +214,7 @@ nav a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
   gap: 25px;
   max-width: 1200px;
   margin: 0 auto;
